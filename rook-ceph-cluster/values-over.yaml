@@ -483,10 +483,10 @@ cephBlockPools:
       # enableRBDStats: true
     storageClass:
       enabled: true
-      name: ceph-block
+      name: rook-ceph-block
       annotations: {}
       labels: {}
-      isDefault: true
+      isDefault: false
       reclaimPolicy: Delete
       allowVolumeExpansion: true
       volumeBindingMode: "Immediate"
