@@ -139,7 +139,7 @@ cephClusterSpec:
         storageClassName: gp2-csi
         resources:
           requests:
-            storage: 10Gi
+            storage: 50Gi
   cephVersion:
     image: quay.io/ceph/ceph:v19.2.3
     allowUnsupported: false
@@ -239,7 +239,7 @@ cephClusterSpec:
             spec:
               resources:
                 requests:
-                  storage: 10Gi
+                  storage: 4Ti
               # IMPORTANT: Change the storage class depending on your environment
               storageClassName: gp2-csi
               volumeMode: Block
