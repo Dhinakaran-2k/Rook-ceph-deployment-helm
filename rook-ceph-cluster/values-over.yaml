@@ -136,7 +136,7 @@ cephClusterSpec:
     # size appropriate for monitor data will be used.
     volumeClaimTemplate:
       spec:
-        storageClassName: gp2-csi
+        storageClassName: gp2-csi #Update your storage class name for the MON Pod
         resources:
           requests:
             storage: 50Gi
@@ -241,7 +241,7 @@ cephClusterSpec:
                 requests:
                   storage: 4Ti
               # IMPORTANT: Change the storage class depending on your environment
-              storageClassName: gp2-csi
+              storageClassName: gp2-csi #Update your storage class name for the OSD Pod
               volumeMode: Block
               accessModes:
                 - ReadWriteOnce
